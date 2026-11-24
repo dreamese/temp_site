@@ -1525,7 +1525,7 @@ window.DREAMESE_DEFAULT_CONFIG = {
         "type": "address",
         "title": "Địa chỉ",
         "lines": [
-          "Cơ sở 1: Trần Văn Thời — Cà Mau",
+          "Cơ sở 1: Vinhomes Grand Park, V305, Đường T2, phường Long Bình, TP. Thủ Đức, TP. Hồ Chí Minh",
           "Cơ sở 2: 11/8/32 ĐHT 17, P. Đông Hưng Thuận, TP.HCM"
         ],
         "image": "",
@@ -1534,7 +1534,7 @@ window.DREAMESE_DEFAULT_CONFIG = {
         "mobile": {
           "title": "Địa chỉ",
           "lines": [
-            "Cơ sở 1: Trần Văn Thời — Cà Mau",
+            "Cơ sở 1: Vinhomes Grand Park, V305, Đường T2, phường Long Bình, TP. Thủ Đức, TP. Hồ Chí Minh",
             "Cơ sở 2: 11/8/32 ĐHT 17, P. Đông Hưng Thuận, TP.HCM"
           ],
           "image": "",
