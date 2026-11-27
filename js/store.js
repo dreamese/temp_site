@@ -135,6 +135,8 @@
       }
     });
 
+    if (['assets/logo/temp-mark-dark.png','assets/logo/temp-mark.png'].includes(normalized.brand.logo)) normalized.brand.logo = defaults.brand.logo;
+    if (['assets/logo/temp-mark-dark.png','assets/logo/temp-mark.png'].includes(normalized.brand.favicon)) normalized.brand.favicon = defaults.brand.favicon;
     normalized.brand.browserTitle = normalized.brand.browserTitle || normalized.brand.name || defaults.brand.browserTitle;
     normalized.brand.favicon = normalized.brand.favicon || normalized.brand.logo || defaults.brand.favicon;
     normalized.brand.metaDescription = normalized.brand.metaDescription || defaults.brand.metaDescription || '';
