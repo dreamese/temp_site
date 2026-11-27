@@ -396,7 +396,7 @@
     projectCards = qa('.project-card');
     projectCards.forEach((card, index) => {
       const activate = () => setActiveProject(index);
-      const openLink = () => card.dataset.cardLink === '#info-card' ? openOverlay(q('#infoOverlay')) : navigateLink(card.dataset.cardLink);
+      const openLink = () => navigateLink(card.dataset.cardLink);
       card.addEventListener('mouseenter', activate);
       card.addEventListener('focus', activate);
       card.addEventListener('click', openLink);
@@ -563,7 +563,10 @@
         </article>`;
     }).join('');
     qa('.contact-card.linked-card').forEach((card) => {
-      const openLink = () => navigateLink(card.dataset.cardLink);
+      const openLink = () => {
+        if (card.dataset.cardLink === '#info-card') { openOverlay(q('#infoOverlay')); return; }
+        navigateLink(card.dataset.cardLink);
+      };
       card.addEventListener('click', openLink);
       card.addEventListener('keydown', (event) => {
         if (event.key === 'Enter' || event.key === ' ') {
