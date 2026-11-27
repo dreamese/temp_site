@@ -2,12 +2,12 @@ window.DREAMESE_DEFAULT_CONFIG = {
   "version": "0.8.0",
   "brand": {
     "browserTitle": "Temp Studio — Architecture & Interior Design",
-    "favicon": "assets/logo/temp-mark.png",
+    "favicon": "assets/logo/temp-con-bang.svg",
     "metaDescription": "Temp Studio — Kiến trúc & Nội thất",
     "themeColor": "#050505",
     "name": "TEMP STUDIO",
     "tagline": "Kiến trúc & Nội thất",
-    "logo": "assets/logo/temp-mark-dark.png",
+    "logo": "assets/logo/temp-con-bang.svg",
     "logoLink": "index.html",
     "email": "vtv.arc@gmail.com",
     "phone": "09 4363 4758",
@@ -17,7 +17,7 @@ window.DREAMESE_DEFAULT_CONFIG = {
     "mobile": {
       "name": "TEMP STUDIO",
       "tagline": "Kiến trúc & Nội thất",
-      "logo": "assets/logo/temp-mark-dark.png",
+      "logo": "assets/logo/temp-con-bang.svg",
       "logoLink": "index.html",
       "email": "vtv.arc@gmail.com",
       "phone": "09 4363 4758",
