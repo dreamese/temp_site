@@ -28,7 +28,7 @@
   --muted: #aaa8a1;
   --line: rgba(255,255,255,.14);
   --line-strong: rgba(255,255,255,.28);
-  --accent: #f0c185;
+  --accent: #ff781c;
   --header-h: 82px;
   --footer-h: 60px;
   --page-pad: clamp(12px, 1.45vw, 26px);
@@ -356,7 +356,7 @@ img { display: block; max-width: 100%; }
 .contact-card h3 { margin: 0 0 18px; font-family: var(--font-title); font-size: 30px; line-height: 1; font-weight: 400; }
 .contact-card p { margin: 0 0 10px; color: #d1cfc9; line-height: 1.55; }
 .contact-card a { margin-top: auto; align-self: flex-start; padding-bottom: 4px; border-bottom: 1px solid currentColor; font-size: 11px; letter-spacing: .06em; }
-.map-placeholder { flex: 1; min-height: 150px; display: grid; place-items: center; padding: 20px; background: radial-gradient(circle at 30% 30%, rgba(240,193,133,.2), transparent 50%), #0a0a0a; color: var(--muted); text-align: center; }
+.map-placeholder { flex: 1; min-height: 150px; display: grid; place-items: center; padding: 20px; background: radial-gradient(circle at 30% 30%, rgba(255,120,28,.2), transparent 50%), #0a0a0a; color: var(--muted); text-align: center; }
 
 .overlay,
 .news-modal {
@@ -1216,3 +1216,8 @@ body.overlay-open { overflow: hidden; }
 @media(prefers-reduced-motion:reduce){.is-preview-loading .media-play{animation:none}}
 
 .blog-preview-slot.is-preview-loading>.blog-preview-frame{opacity:0;pointer-events:none}
+
+/* Temp Studio — Con Bang identity */
+.brand-copy strong { display:block; width:132px; height:40px; background:url('../assets/logo/temp-wordmark.svg') center left / contain no-repeat; font-size:0; color:transparent; letter-spacing:0; }
+.brand-copy small { font-size:9px; }
+@media(max-width:760px){.brand-copy strong{width:99px;height:30px;font-size:0}.brand-copy small{font-size:8px}}
