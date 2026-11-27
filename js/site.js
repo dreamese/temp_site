@@ -396,7 +396,7 @@
     projectCards = qa('.project-card');
     projectCards.forEach((card, index) => {
       const activate = () => setActiveProject(index);
-      const openLink = () => navigateLink(card.dataset.cardLink);
+      const openLink = () => card.dataset.cardLink === '#info-card' ? openOverlay(q('#infoOverlay')) : navigateLink(card.dataset.cardLink);
       card.addEventListener('mouseenter', activate);
       card.addEventListener('focus', activate);
       card.addEventListener('click', openLink);
@@ -529,6 +529,8 @@
     q('#contactEyebrow').textContent = deviceValue(config.contact, 'eyebrow', config.contact.eyebrow);
     q('#contactTitle').textContent = deviceValue(config.contact, 'title', config.contact.title);
     contactGrid.innerHTML = config.contact.cards.map((card, index) => {
+      const businessCard = card.type === 'business-card' || (card.type === 'social' && card.title === 'Website');
+      if (businessCard) return '<article class="contact-card contact-business-card linked-card" tabindex="0" role="button" data-card-link="#info-card" aria-label="Xem card visit Temp Studio"><div class="contact-card-image"><img src="assets/logo/temp-con-bang.svg" alt="Côn Bằng"></div><div class="contact-card-body"><h3>Info</h3><p>Business Card — Temp Studio</p></div></article>';
       const image = deviceValue(card, 'image', card.image);
       const lines = deviceValue(card, 'lines', card.lines) || [];
       const link = safeHref(deviceValue(card, 'link', card.link));
