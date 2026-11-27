@@ -1249,3 +1249,10 @@ body.overlay-open { overflow: hidden; }
   .info-overlay .overlay-close { min-height:44px; top:max(8px,env(safe-area-inset-top)); right:max(8px,env(safe-area-inset-right)); }
   .info-card-preview { flex:0 0 auto; width:100%; height:auto; max-height:calc(100dvh - 80px - env(safe-area-inset-top) - env(safe-area-inset-bottom)); }
 }
+
+/* Info: portrait artwork and business-card image on mobile and desktop. */
+.info-overlay.is-open { flex-direction:column; gap:12px; overflow-y:auto; }
+.info-card-preview { max-height:calc(100dvh - 132px); flex-shrink:1; min-height:0; }
+.info-card-actions { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; flex-shrink:0; }
+.info-card-actions a { min-height:44px; padding:12px 20px; border:1px solid var(--accent); border-radius:8px; color:var(--accent); font-size:13px; }
+@media(max-width:820px) { .info-card-preview { width:100%; max-height:none; flex-shrink:0; } .info-overlay.is-open { justify-content:flex-start; } .info-card-actions { width:100%; } }
