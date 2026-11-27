@@ -1567,7 +1567,7 @@ window.DREAMESE_DEFAULT_CONFIG = {
         "lines": [
           "Business Card — Temp Studio"
         ],
-        "image": "assets/logo/temp-con-bang.svg",
+        "image": "assets/logo/temp-con-bang-artwork.jpg",
         "link": "#info-card",
         "linkLabel": "Xem card visit",
         "mobile": {
@@ -1575,7 +1575,7 @@ window.DREAMESE_DEFAULT_CONFIG = {
           "lines": [
             "Business Card — Temp Studio"
           ],
-          "image": "assets/logo/temp-con-bang.svg",
+          "image": "assets/logo/temp-con-bang-artwork.jpg",
           "link": "#info-card",
           "linkLabel": "Xem card visit"
         }
