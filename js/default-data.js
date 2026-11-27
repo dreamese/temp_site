@@ -1562,34 +1562,23 @@ window.DREAMESE_DEFAULT_CONFIG = {
         }
       },
       {
-        "type": "social",
-        "title": "Website",
+        "type": "business-card",
+        "title": "Info",
         "lines": [
-          "Temp Studio — Kiến trúc & Nội thất"
+          "Business Card — Temp Studio"
         ],
-        "image": "",
-        "link": "https://dreamese.github.io/temp_site/index.html",
-        "linkLabel": "Truy cập website →",
+        "image": "assets/logo/temp-con-bang.svg",
+        "link": "#info-card",
+        "linkLabel": "Xem card visit",
         "mobile": {
-          "title": "Website",
+          "title": "Info",
           "lines": [
-            "Temp Studio — Kiến trúc & Nội thất"
+            "Business Card — Temp Studio"
           ],
-          "image": "",
-          "link": "https://dreamese.github.io/temp_site/index.html",
-          "linkLabel": "Truy cập website →"
-        },
-        "socialLinks": [
-          {
-            "platform": "website",
-            "label": "Temp Studio",
-            "url": "https://dreamese.github.io/temp_site/index.html",
-            "mobile": {
-              "label": "Temp Studio",
-              "url": "https://dreamese.github.io/temp_site/index.html"
-            }
-          }
-        ]
+          "image": "assets/logo/temp-con-bang.svg",
+          "link": "#info-card",
+          "linkLabel": "Xem card visit"
+        }
       }
     ],
     "mobile": {
