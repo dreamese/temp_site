@@ -205,6 +205,13 @@
     });
 
     copyMobileFields(normalized.contact, ['eyebrow', 'title']);
+    // Migrate previously saved Website card on both devices without resetting other settings.
+    const businessCardDefault = defaults.contact?.cards?.find(item => item.type === 'business-card');
+    if (businessCardDefault && Array.isArray(normalized.contact?.cards)) {
+      const oldIndex = normalized.contact.cards.findIndex(item => item.type === 'business-card' || (item.type === 'social' && (item.title === 'Website' || item.mobile?.title === 'Website')));
+      if (oldIndex >= 0) normalized.contact.cards[oldIndex] = clone(businessCardDefault);
+      else normalized.contact.cards.push(clone(businessCardDefault));
+    }
     (normalized.contact?.cards || []).forEach((item, index) => {
       copyMobileFields(item, ['title', 'lines', 'image', 'link', 'linkLabel']);
       syncStaleMobileField(item, defaults.contact?.cards?.[index], 'image');
