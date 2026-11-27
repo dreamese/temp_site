@@ -530,7 +530,7 @@
     q('#contactTitle').textContent = deviceValue(config.contact, 'title', config.contact.title);
     contactGrid.innerHTML = config.contact.cards.map((card, index) => {
       const businessCard = card.type === 'business-card' || (card.type === 'social' && card.title === 'Website');
-      if (businessCard) return '<article class="contact-card contact-business-card linked-card" tabindex="0" role="button" data-card-link="#info-card" aria-label="Xem card visit Temp Studio"><div class="contact-card-image"><img src="assets/logo/temp-con-bang.svg" alt="Côn Bằng"></div><div class="contact-card-body"><h3>Info</h3><p>Business Card — Temp Studio</p></div></article>';
+      if (businessCard) return '<article class="contact-card contact-business-card linked-card" tabindex="0" role="button" data-card-link="#info-card" aria-label="Xem card visit Temp Studio"><div class="contact-card-image"><img src="assets/logo/temp-con-bang-artwork.jpg" alt="Côn Bằng" onerror="this.onerror=null;this.src=&quot;assets/logo/temp-con-bang.svg&quot;"></div><div class="contact-card-body"><h3>Info</h3><p>Business Card — Temp Studio</p></div></article>';
       const image = deviceValue(card, 'image', card.image);
       const lines = deviceValue(card, 'lines', card.lines) || [];
       const link = safeHref(deviceValue(card, 'link', card.link));
